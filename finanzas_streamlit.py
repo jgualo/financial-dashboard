@@ -13,10 +13,9 @@ st.set_page_config(
 non_expenses_categories = ['Interés Cuenta Remunerada', 'Rentabilidad Indexa Capital', 'Nómina']
 fixed_salary_categories = ['Nómina']
 currency = '€'
-STEP_MONTH = timedelta(days=30.2)
 
 ### Fetch the data from 
-excel_file = pd.ExcelFile('C:/Users/josec/OneDrive/Escritorio/codigos/finanzas_streamlit/Finanzas.xlsx')
+excel_file = pd.ExcelFile('Finanzas.xlsx')
 all_sheets = excel_file.parse(None)
 
 movements = all_sheets['Movimientos']
